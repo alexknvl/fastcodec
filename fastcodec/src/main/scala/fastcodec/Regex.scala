@@ -218,7 +218,7 @@ object Regex {
       className,      // package and name
       null, // signature (null means not generic)
       "java/lang/Object", // superclass
-      Array[String]("com/alexknvl/discreteopt/Matcher")) // interfaces
+      Array[String]("fastcodec/Matcher")) // interfaces
 
     // val charArrayClass = cw.newConst(Type.getType(classOf[Array[Char]]))
 
@@ -232,7 +232,7 @@ object Regex {
         "java/lang/Object", "<init>", "()V",
         false)
       mv.visitInsn(RETURN)
-      mv.visitMaxs(2, 3)
+      mv.visitMaxs(1, 1)
       mv.visitEnd()
     }
 
